@@ -13,18 +13,38 @@
 
     <script src="script.js"></script>
   </head>
-  <body>
-    <div class="clock">
-      <div id="analogContainer">
-        <div id="horizontal"></div>
-        <div id="vertical"></div>
-        <div id="hour"></div>
-        <div id="minute"></div>
-        <div id="second"></div>
+  <div class="clock">
+    <div id="analogContainer">
+      <div id="horizontal"></div>
+      <div id="vertical"></div>
+      <div id="hour"></div>
+      <div id="minute"></div>
+      <div id="second"></div>
+    </div>
+    <div id="digitalContainer">
+      <p id="digital"></p>
+    </div>
+    <div id="weatherContainer">
+      <div id="weatherTitle">Weather Details</div>
+      <h2 id="cityName">Loading...</h2>
+      <div class="weatherDetail">
+        <span class="weatherLabel">Temperature:</span>
+        <span class="weatherValue" id="temperature">-- °C</span>
       </div>
-      <div id="digitalContainer">
-        <p id="digital"></p>
+      <div class="weatherDetail">
+        <span class="weatherLabel">Humidity:</span>
+        <span class="weatherValue" id="humidity">-- %</span>
+      </div>
+      <div class="weatherDetail">
+        <span class="weatherLabel">Wind Speed:</span>
+        <span class="weatherValue" id="windSpeed">-- m/s</span>
+      </div>
+      <div class="weatherDetail">
+        <span class="weatherLabel">Condition:</span>
+        <span class="weatherValue" id="condition">--</span>
       </div>
     </div>
-  </body>
+    
+  </div>
+</body>
 </html>
