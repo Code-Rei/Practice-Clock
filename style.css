@@ -1,0 +1,79 @@
+/* Body */
+body {
+  background: conic-gradient(#1a1a2e, #16213e, #0f3460, #1a1a2e);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Analog Clock Container */
+#analogContainer {
+  position: relative;
+  margin: auto;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+
+  background-image: conic-gradient(
+      from 0deg,
+      #1a1a2e,
+      #16213e,
+      #0f3460,
+      #1a1a2e
+    ),
+    radial-gradient(#4b0082 5%, #0000 6%);
+  background-size: 100% 100%, 3rem 3rem;
+  background-repeat: no-repeat, repeat;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+/* Hands */
+#hour {
+  position: absolute;
+  height: 10vw;
+  left: 15vw;
+  top: 5vw;
+  border-left: 7px solid #e94560;
+  border-radius: 30%;
+  transform-origin: bottom;
+}
+#minute {
+  position: absolute;
+  height: 12vw;
+  left: 15vw;
+  top: 3vw;
+  border-left: 6px solid #f8f32b;
+  border-radius: 30%;
+  transform-origin: bottom;
+}
+#second {
+  position: absolute;
+  height: 14vw;
+  left: 15vw;
+  top: 1vw;
+  border-left: 4px solid #00e0ff;
+  border-radius: 30%;
+  transform-origin: bottom;
+  transition: transform 1s linear;
+}
+
+/* Digital Clock */
+#digitalContainer {
+  color: #00ffff;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+  padding: 1vw;
+  font-size: 2.5vw;
+  text-shadow: 0 0 8px #00ffff, 0 0 20px #00d4ff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00ffff;
+}
