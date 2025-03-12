@@ -20,7 +20,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 15px #00ffff;
 
-  background: url(/assets/clock.png) no-repeat center/100%,
+  background: url(./assets/clock.png) no-repeat center/100%,
     /* Clock Image */
       conic-gradient(from 0deg, #1a1a2e, #16213e, #0f3460, #1a1a2e); /* Gradient */
   background-size: 100% 100%, 100% 100%;
@@ -32,7 +32,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: url(/assets/clock.png) no-repeat center/100%;
+  background: url(./assets/clock.png) no-repeat center/100%;
   filter: invert(1);
   opacity: 90%;
   z-index: 1;
